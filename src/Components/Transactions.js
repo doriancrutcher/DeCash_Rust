@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { InMemorySigner } from "near-api-js";
+import { Container, Row, Card } from "react-bootstrap";
 import { async } from "regenerator-runtime";
 
 const Transactions = (props) => {
@@ -8,7 +9,7 @@ const Transactions = (props) => {
 
   useEffect(() => {
     const getInfo = async () => {
-      let userMemos = await window.contract.getMemos({
+      let userMemos = await window.contract.get_memos({
         user: window.accountId,
       });
       changeMemos(userMemos);
@@ -19,7 +20,20 @@ const Transactions = (props) => {
 
   return (
     <Container>
-      {'give me code to display transactions '}
+      {memos.map((el, i) => {
+        return (
+          <Row
+            style={{ margin: "3vh" }}
+            key={i}
+            className='d-flex justify-content-center'
+          >
+            <Card>
+              <Card.Title>Transaction #{i}</Card.Title>
+              <Card.Body>{el}</Card.Body>
+            </Card>
+          </Row>
+        );
+      })}
     </Container>
   );
 };
