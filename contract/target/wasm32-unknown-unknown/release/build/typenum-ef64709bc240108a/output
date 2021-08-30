@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/doriankinoocrutcher/Documents/blockheads/decash_rust/contract/target/wasm32-unknown-unknown/release/build/typenum-ef64709bc240108a/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/doriankinoocrutcher/Documents/blockheads/decash_rust/contract/target/wasm32-unknown-unknown/release/build/typenum-ef64709bc240108a/out/op.rs

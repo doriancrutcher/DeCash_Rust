@@ -1,0 +1,1 @@
+{"rustc":2624477146670686978,"features":"[]","target":16942209568598615377,"profile":7936567066825342194,"path":17460619955869943221,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"wasm32-unknown-unknown/release/.fingerprint/byte-tools-906fda50279072c5/dep-lib-byte-tools"}}],"rustflags":["-C","link-args=-s"],"metadata":13863224363705724016,"config":0}
